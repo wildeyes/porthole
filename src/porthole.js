@@ -506,7 +506,7 @@ iFrame proxy abc.com->abc.com: forwardMessageEvent(event)
     };
 
     // Support testing in node.js:
-    if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined') {
         module.exports = Porthole;
     } else {
         window.Porthole = Porthole;
